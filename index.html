@@ -627,6 +627,7 @@
             <div class="form-success-icon">&#10003;</div>
             <h4 data-i18n="form_success_title">Thank You!</h4>
             <p data-i18n="form_success_desc">We'll review your website and get back to you within 24 hours with your custom ROI report.</p>
+            <button onclick="resetForm()" style="margin-top:24px;background:none;border:none;color:#5400b1;font-size:14px;font-weight:600;cursor:pointer;text-decoration:underline;" data-i18n="form_send_another">Send another message</button>
           </div>
         </div>
       </div>
@@ -1132,6 +1133,7 @@
         form_privacy: 'Your info is safe. We\u2019ll never spam you.',
         form_success_title: 'Thank You!',
         form_success_desc: 'We\u2019ll review your website and get back to you within 24 hours with your custom ROI report.',
+        form_send_another: 'Send another message',
         form_fname_ph: 'John',
         form_lname_ph: 'Smith',
         form_email_ph: 'john@example.com',
@@ -1338,6 +1340,7 @@
         form_privacy: 'Vos informations sont en s\u00e9curit\u00e9. Nous ne vous enverrons jamais de spam.',
         form_success_title: 'Merci !',
         form_success_desc: 'Nous examinerons votre site et vous contacterons dans les 24 heures avec votre rapport ROI personnalis\u00e9.',
+        form_send_another: 'Envoyer un autre message',
         form_fname_ph: 'Jean',
         form_lname_ph: 'Dupont',
         form_email_ph: 'jean@exemple.com',
@@ -1552,6 +1555,17 @@
         if (saved === 'fr') { applyLang('fr'); }
       } catch(e) {}
     })();
+
+    function resetForm() {
+      var form = document.getElementById('audit-form');
+      var btn = document.getElementById('form-btn');
+      var t = translations[currentLang];
+      form.reset();
+      form.style.display = '';
+      document.getElementById('form-success').style.display = 'none';
+      btn.disabled = false;
+      btn.textContent = t.form_btn;
+    }
 
     async function submitForm(e) {
       e.preventDefault();
