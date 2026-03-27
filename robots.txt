@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://montreal.rushanet.com/sitemap.xml
