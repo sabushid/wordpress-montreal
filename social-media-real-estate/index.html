@@ -609,13 +609,13 @@
   <section class="section bg-light" aria-label="See It In Action">
     <div class="section-inner">
       <div class="section-head">
-        <span class="section-tag" data-i18n="vid_tag">Listen to Our Pitch</span>
-        <h2 class="section-title" data-i18n="vid_title">Hear How We <em>Help Agents</em></h2>
+        <span class="section-tag" data-i18n="vid_tag">See It In Action</span>
+        <h2 class="section-title" data-i18n="vid_title">Watch How It <em>Works</em></h2>
       </div>
       <div style="max-width:960px; margin:0 auto; border-radius:16px; overflow:hidden; box-shadow:0 20px 60px rgba(84,0,177,0.1); border:1px solid rgba(84,0,177,0.05);">
-        <audio id="video-player" controls preload="none" style="width:100%;max-width:600px;display:block;margin:0 auto;">
-          <source src="https://montreal.rushanet.com/SocialMedia-EN.mp3" type="audio/mpeg" />
-        </audio>
+        <video id="video-player" controls preload="none" poster="" style="width:100%; display:block;">
+          <source src="https://montreal.rushanet.com/WordPressAd.mp4" type="video/mp4" />
+        </video>
       </div>
     </div>
   </section>
@@ -1205,8 +1205,8 @@
         res3_label: 'Hours saved on content per week',
         res4_label: 'More inbound inquiries from social',
         // Video
-        vid_tag: 'Listen to Our Pitch',
-        vid_title: 'Hear How We <em>Help Agents</em>',
+        vid_tag: 'See It In Action',
+        vid_title: 'Watch How It <em>Works</em>',
         // Form
         form_heading: 'Get Your Free <em>Social Audit</em>',
         form_sub: 'We\u2019ll audit your Facebook & Instagram presence and show you exactly how to turn social media into a lead-generating machine.',
@@ -1626,7 +1626,7 @@
       // Update video source
       var video = document.getElementById('video-player');
       if (video) {
-        var src = lang === 'fr' ? 'https://montreal.rushanet.com/SocialMedia-FR.mp3' : 'https://montreal.rushanet.com/SocialMedia-EN.mp3';
+        var src = lang === 'fr' ? 'https://montreal.rushanet.com/WordPressAd-FR.mp4' : 'https://montreal.rushanet.com/WordPressAd.mp4';
         var source = video.querySelector('source');
         if (source && source.getAttribute('src') !== src) {
           source.setAttribute('src', src);
