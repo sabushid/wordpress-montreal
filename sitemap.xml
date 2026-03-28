@@ -77,4 +77,79 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <!-- AI Agents Development -->
+  <url>
+    <loc>https://montreal.rushanet.com/ai-agents-development/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://montreal.rushanet.com/ai-agents-development/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://montreal.rushanet.com/ai-agents-development/?lang=fr" />
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://montreal.rushanet.com/ai-agents-development-montreal/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://montreal.rushanet.com/ai-agents-development-montreal/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://montreal.rushanet.com/ai-agents-development-montreal/?lang=fr" />
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://montreal.rushanet.com/ai-agents-development-longueuil/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://montreal.rushanet.com/ai-agents-development-longueuil/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://montreal.rushanet.com/ai-agents-development-longueuil/?lang=fr" />
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- AI Agents Consultation -->
+  <url>
+    <loc>https://montreal.rushanet.com/ai-agents-consultation/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://montreal.rushanet.com/ai-agents-consultation/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://montreal.rushanet.com/ai-agents-consultation/?lang=fr" />
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://montreal.rushanet.com/ai-agents-consultation-montreal/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://montreal.rushanet.com/ai-agents-consultation-montreal/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://montreal.rushanet.com/ai-agents-consultation-montreal/?lang=fr" />
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://montreal.rushanet.com/ai-agents-consultation-longueuil/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://montreal.rushanet.com/ai-agents-consultation-longueuil/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://montreal.rushanet.com/ai-agents-consultation-longueuil/?lang=fr" />
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- AI Agents Education -->
+  <url>
+    <loc>https://montreal.rushanet.com/ai-agents-education/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://montreal.rushanet.com/ai-agents-education/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://montreal.rushanet.com/ai-agents-education/?lang=fr" />
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://montreal.rushanet.com/ai-agents-education-montreal/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://montreal.rushanet.com/ai-agents-education-montreal/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://montreal.rushanet.com/ai-agents-education-montreal/?lang=fr" />
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://montreal.rushanet.com/ai-agents-education-longueuil/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://montreal.rushanet.com/ai-agents-education-longueuil/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://montreal.rushanet.com/ai-agents-education-longueuil/?lang=fr" />
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
