@@ -610,13 +610,13 @@
   <section class="section bg-light" aria-label="See It In Action">
     <div class="section-inner">
       <div class="section-head">
-        <span class="section-tag" data-i18n="vid_tag">See It In Action</span>
-        <h2 class="section-title" data-i18n="vid_title">Watch How It <em>Works</em></h2>
+        <span class="section-tag" data-i18n="vid_tag">Listen to Our Pitch</span>
+        <h2 class="section-title" data-i18n="vid_title">Hear How We <em>Help Agents</em></h2>
       </div>
       <div style="max-width:960px; margin:0 auto; border-radius:16px; overflow:hidden; box-shadow:0 20px 60px rgba(84,0,177,0.1); border:1px solid rgba(84,0,177,0.05);">
-        <video id="video-player" controls preload="none" poster="" style="width:100%; display:block;">
-          <source src="https://montreal.rushanet.com/WordPressAd.mp4" type="video/mp4" />
-        </video>
+        <audio id="video-player" controls preload="none" style="width:100%;max-width:600px;display:block;margin:0 auto;">
+          <source src="https://montreal.rushanet.com/SocialMedia-EN.mp3" type="audio/mpeg" />
+        </audio>
       </div>
     </div>
   </section>
@@ -1207,8 +1207,8 @@
         res3_label: 'Saved on content creation weekly',
         res4_label: 'More inbound inquiries from social',
         // Video
-        vid_tag: 'See It In Action',
-        vid_title: 'Watch How It <em>Works</em>',
+        vid_tag: 'Listen to Our Pitch',
+        vid_title: 'Hear How We <em>Help Agents</em>',
         // Form
         form_heading: 'Get Your Free <em>Social Audit</em>',
         form_sub: 'We\u2019ll analyze your social media presence and show you exactly where you\u2019re losing engagement and listing exposure \u2014 and how to fix it.',
@@ -1428,8 +1428,8 @@
         res3_label: '\u00c9conomis\u00e9es en cr\u00e9ation de contenu par semaine',
         res4_label: 'Plus de demandes entrantes depuis les r\u00e9seaux',
         // Video
-        vid_tag: 'Voyez-le en Action',
-        vid_title: 'Regardez Comment \u00c7a <em>Fonctionne</em>',
+        vid_tag: '00c9coutez Notre Pr00e9sentation',
+        vid_title: 'D00e9couvrez Comment Nous <em>Aidons les Courtiers</em>',
         // Form
         form_heading: 'Obtenez votre audit social <em>gratuit</em>',
         form_sub: 'Nous analyserons votre pr\u00e9sence sur les r\u00e9seaux sociaux et vous montrerons exactement o\u00f9 vous perdez de l\u2019engagement et de la visibilit\u00e9 \u2014 et comment y rem\u00e9dier.',
@@ -1629,7 +1629,7 @@
       // Update video source
       var video = document.getElementById('video-player');
       if (video) {
-        var src = lang === 'fr' ? 'https://montreal.rushanet.com/WordPressAd-FR.mp4' : 'https://montreal.rushanet.com/WordPressAd.mp4';
+        var src = lang === 'fr' ? 'https://montreal.rushanet.com/SocialMedia-FR.mp3' : 'https://montreal.rushanet.com/SocialMedia-EN.mp3';
         var source = video.querySelector('source');
         if (source && source.getAttribute('src') !== src) {
           source.setAttribute('src', src);
