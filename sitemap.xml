@@ -6,15 +6,16 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://montreal.rushanet.com/" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://montreal.rushanet.com/?lang=fr" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://montreal.rushanet.com/" />
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+  <!-- WordPress + AI Lead Automation -->
   <url>
     <loc>https://montreal.rushanet.com/real-estate-leads-montreal/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://montreal.rushanet.com/real-estate-leads-montreal/" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://montreal.rushanet.com/real-estate-leads-montreal/?lang=fr" />
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -22,8 +23,58 @@
     <loc>https://montreal.rushanet.com/real-estate-leads-longueuil/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://montreal.rushanet.com/real-estate-leads-longueuil/" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://montreal.rushanet.com/real-estate-leads-longueuil/?lang=fr" />
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <!-- Google Business Profile -->
+  <url>
+    <loc>https://montreal.rushanet.com/google-business-profile/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://montreal.rushanet.com/google-business-profile/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://montreal.rushanet.com/google-business-profile/?lang=fr" />
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://montreal.rushanet.com/google-business-profile-montreal/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://montreal.rushanet.com/google-business-profile-montreal/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://montreal.rushanet.com/google-business-profile-montreal/?lang=fr" />
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://montreal.rushanet.com/google-business-profile-longueuil/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://montreal.rushanet.com/google-business-profile-longueuil/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://montreal.rushanet.com/google-business-profile-longueuil/?lang=fr" />
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- Social Media Automation -->
+  <url>
+    <loc>https://montreal.rushanet.com/social-media-real-estate/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://montreal.rushanet.com/social-media-real-estate/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://montreal.rushanet.com/social-media-real-estate/?lang=fr" />
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://montreal.rushanet.com/social-media-real-estate-montreal/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://montreal.rushanet.com/social-media-real-estate-montreal/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://montreal.rushanet.com/social-media-real-estate-montreal/?lang=fr" />
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://montreal.rushanet.com/social-media-real-estate-longueuil/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://montreal.rushanet.com/social-media-real-estate-longueuil/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://montreal.rushanet.com/social-media-real-estate-longueuil/?lang=fr" />
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>
