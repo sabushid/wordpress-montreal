@@ -606,6 +606,21 @@
     </div>
   </section>
 
+  <!-- ── Video ── -->
+  <section id="watch" class="section bg-light" aria-label="Video">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="section-tag" data-i18n="vid_tag">See It In Action</span>
+        <h2 class="section-title" data-i18n="vid_title">Watch How It <em>Works</em></h2>
+      </div>
+      <div style="max-width:960px; margin:0 auto; border-radius:16px; overflow:hidden; box-shadow:0 20px 60px rgba(84,0,177,0.1); border:1px solid rgba(84,0,177,0.05);">
+        <video id="video-player" controls preload="none" poster="" style="width:100%; display:block;">
+          <source src="https://montreal.rushanet.com/AIEdu-EN.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+  </section>
+
   <!-- ── Form ── -->
   <section id="audit" class="section form-section" aria-label="Book Your Free Intro Session">
     <div class="section-inner">
@@ -1610,6 +1625,13 @@
 
       // Update document lang
       document.documentElement.lang = lang;
+      // Update video source
+      var video = document.getElementById('video-player');
+      if (video) {
+        var src = lang === 'fr' ? 'https://montreal.rushanet.com/AIEdu-FR.mp4' : 'https://montreal.rushanet.com/AIEdu-EN.mp4';
+        var source = video.querySelector('source');
+        if (source) { source.src = src; video.load(); }
+      }
 
       // Update document title and meta description
       document.title = t.meta_title;
