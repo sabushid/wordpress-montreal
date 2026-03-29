@@ -255,6 +255,24 @@
     .step h3 { font-family: 'Montserrat', sans-serif; font-size: 18px; font-weight: 700; margin-bottom: 8px; }
     .step p { color: #6b7280; font-size: 14px; max-width: 280px; margin: 0 auto; line-height: 1.7; }
 
+    /* -- Case Studies -- */
+    .cs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+    .cs-card { background: #fff; border-radius: 16px; overflow: hidden; border: 1px solid rgba(84,0,177,0.05); transition: all 0.3s; }
+    .cs-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.08); }
+    .cs-header { background: linear-gradient(135deg, #5400b1, #804dd3); padding: 20px 28px; position: relative; overflow: hidden; }
+    .cs-header::after { content: ''; position: absolute; top: -30px; right: -30px; width: 96px; height: 96px; border-radius: 50%; background: rgba(255,255,255,0.05); }
+    .cs-num { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.15em; color: #c3aaea; margin-bottom: 4px; }
+    .cs-header h3 { font-family: 'Montserrat', sans-serif; color: #fff; font-weight: 700; font-size: 14px; line-height: 1.4; }
+    .cs-body { padding: 20px 28px; }
+    .cs-body > p { color: #6b7280; font-size: 14px; line-height: 1.7; margin-bottom: 16px; }
+    .cs-metrics { display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; }
+    .cs-metric { background: #f7f5fc; border-radius: 8px; padding: 6px 12px; display: flex; align-items: center; gap: 8px; }
+    .cs-metric-val { font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 800; background: linear-gradient(135deg, #5400b1, #804dd3); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .cs-metric-label { font-size: 10px; color: #9ca3af; }
+    .cs-tags { display: flex; gap: 6px; flex-wrap: wrap; }
+    .cs-tag { font-size: 10px; font-weight: 600; padding: 4px 10px; border-radius: 9999px; background: rgba(84,0,177,0.05); color: #5400b1; text-transform: uppercase; letter-spacing: 0.05em; }
+    @media(max-width:767px) { .cs-header { padding: 16px 20px; } .cs-body { padding: 16px 20px; } }
+
     /* -- Testimonials -- */
     .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
     @media(min-width:768px) { .testimonials-grid { grid-template-columns: repeat(3, 1fr); } }
@@ -605,6 +623,200 @@
     </div>
   </section>
 
+  <!-- -- Case Studies -- -->
+  <section id="cases" class="section" aria-label="Case Studies">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="section-tag" data-i18n="cs_tag">Case Studies</span>
+        <h2 class="section-title" data-i18n="cs_title">10 AI Consultations That <em>Delivered Results</em></h2>
+        <p class="section-desc" data-i18n="cs_desc">Real businesses. Real AI strategies. Measurable outcomes from our consultation engagements.</p>
+      </div>
+      <div class="cs-grid">
+
+        <div class="cs-card">
+          <div class="cs-header">
+            <div class="cs-num" data-i18n="cs1_num">Case Study 01</div>
+            <h3 data-i18n="cs1_title">AI Lead Follow-Up for Montreal Real Estate Agency</h3>
+          </div>
+          <div class="cs-body">
+            <p data-i18n="cs1_desc">Audited their lead process and implemented AI-powered email, SMS, and phone follow-up responding in under 60 seconds. Eliminated 25+ hours/week of manual work.</p>
+            <div class="cs-metrics">
+              <div class="cs-metric"><span class="cs-metric-val">+5X</span><span class="cs-metric-label" data-i18n="cs1_m1">Leads</span></div>
+              <div class="cs-metric"><span class="cs-metric-val">10X</span><span class="cs-metric-label">ROI</span></div>
+            </div>
+            <div class="cs-tags">
+              <span class="cs-tag" data-i18n="cs_tag_lead">Lead Automation</span>
+              <span class="cs-tag" data-i18n="cs_tag_re">Real Estate</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cs-card">
+          <div class="cs-header">
+            <div class="cs-num" data-i18n="cs2_num">Case Study 02</div>
+            <h3 data-i18n="cs2_title">Customer Service AI for E-Commerce Brand</h3>
+          </div>
+          <div class="cs-body">
+            <p data-i18n="cs2_desc">Built a custom AI chatbot handling 80% of support tickets automatically. Reduced response time from 4 hours to under 30 seconds and cut support costs by 45%.</p>
+            <div class="cs-metrics">
+              <div class="cs-metric"><span class="cs-metric-val">-45%</span><span class="cs-metric-label" data-i18n="cs2_m1">Support costs</span></div>
+              <div class="cs-metric"><span class="cs-metric-val">&lt;30s</span><span class="cs-metric-label" data-i18n="cs2_m2">Response time</span></div>
+            </div>
+            <div class="cs-tags">
+              <span class="cs-tag" data-i18n="cs_tag_chatbot">AI Chatbot</span>
+              <span class="cs-tag">E-Commerce</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cs-card">
+          <div class="cs-header">
+            <div class="cs-num" data-i18n="cs3_num">Case Study 03</div>
+            <h3 data-i18n="cs3_title">Workflow Automation for Montreal Law Firm</h3>
+          </div>
+          <div class="cs-body">
+            <p data-i18n="cs3_desc">Mapped 12 manual processes and automated 8 of them with AI — client intake, document generation, follow-ups, and scheduling. Freed up 15 hours/week for billable work.</p>
+            <div class="cs-metrics">
+              <div class="cs-metric"><span class="cs-metric-val">15+ hrs</span><span class="cs-metric-label" data-i18n="cs3_m1">Saved / week</span></div>
+              <div class="cs-metric"><span class="cs-metric-val">+35%</span><span class="cs-metric-label" data-i18n="cs3_m2">Revenue</span></div>
+            </div>
+            <div class="cs-tags">
+              <span class="cs-tag" data-i18n="cs_tag_workflow">Workflow</span>
+              <span class="cs-tag" data-i18n="cs_tag_legal">Legal</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cs-card">
+          <div class="cs-header">
+            <div class="cs-num" data-i18n="cs4_num">Case Study 04</div>
+            <h3 data-i18n="cs4_title">AI Content Strategy for Fitness Brand</h3>
+          </div>
+          <div class="cs-body">
+            <p data-i18n="cs4_desc">Developed an AI-powered content pipeline — blog posts, social media, email campaigns — generating 10X more content at 70% lower cost. Organic traffic tripled in 3 months.</p>
+            <div class="cs-metrics">
+              <div class="cs-metric"><span class="cs-metric-val">+300%</span><span class="cs-metric-label" data-i18n="cs4_m1">Traffic</span></div>
+              <div class="cs-metric"><span class="cs-metric-val">-70%</span><span class="cs-metric-label" data-i18n="cs4_m2">Content cost</span></div>
+            </div>
+            <div class="cs-tags">
+              <span class="cs-tag" data-i18n="cs_tag_content">Content AI</span>
+              <span class="cs-tag" data-i18n="cs_tag_seo">SEO</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cs-card">
+          <div class="cs-header">
+            <div class="cs-num" data-i18n="cs5_num">Case Study 05</div>
+            <h3 data-i18n="cs5_title">AI Appointment Booking for Dental Clinic</h3>
+          </div>
+          <div class="cs-body">
+            <p data-i18n="cs5_desc">Replaced manual phone scheduling with AI booking agent. Patients book 24/7 via SMS and web, get automated reminders, and no-shows dropped by 60%.</p>
+            <div class="cs-metrics">
+              <div class="cs-metric"><span class="cs-metric-val">+42%</span><span class="cs-metric-label" data-i18n="cs5_m1">Bookings</span></div>
+              <div class="cs-metric"><span class="cs-metric-val">-60%</span><span class="cs-metric-label" data-i18n="cs5_m2">No-shows</span></div>
+            </div>
+            <div class="cs-tags">
+              <span class="cs-tag" data-i18n="cs_tag_booking">Booking AI</span>
+              <span class="cs-tag" data-i18n="cs_tag_health">Healthcare</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cs-card">
+          <div class="cs-header">
+            <div class="cs-num" data-i18n="cs6_num">Case Study 06</div>
+            <h3 data-i18n="cs6_title">Data Analytics AI for IT Consulting Firm</h3>
+          </div>
+          <div class="cs-body">
+            <p data-i18n="cs6_desc">Built AI-powered dashboards that automatically analyze project data, predict delays, and generate weekly reports. Saved the leadership team 8 hours/week on reporting.</p>
+            <div class="cs-metrics">
+              <div class="cs-metric"><span class="cs-metric-val">8 hrs</span><span class="cs-metric-label" data-i18n="cs6_m1">Saved / week</span></div>
+              <div class="cs-metric"><span class="cs-metric-val">+25%</span><span class="cs-metric-label" data-i18n="cs6_m2">On-time delivery</span></div>
+            </div>
+            <div class="cs-tags">
+              <span class="cs-tag" data-i18n="cs_tag_data">Data AI</span>
+              <span class="cs-tag" data-i18n="cs_tag_it">IT Consulting</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cs-card">
+          <div class="cs-header">
+            <div class="cs-num" data-i18n="cs7_num">Case Study 07</div>
+            <h3 data-i18n="cs7_title">AI Sales Agent for South Shore Insurance Broker</h3>
+          </div>
+          <div class="cs-body">
+            <p data-i18n="cs7_desc">Deployed an AI agent that qualifies inbound leads, answers policy questions, and books consultations automatically. Converted 3X more website visitors into clients.</p>
+            <div class="cs-metrics">
+              <div class="cs-metric"><span class="cs-metric-val">+3X</span><span class="cs-metric-label" data-i18n="cs7_m1">Conversions</span></div>
+              <div class="cs-metric"><span class="cs-metric-val">24/7</span><span class="cs-metric-label" data-i18n="cs7_m2">Availability</span></div>
+            </div>
+            <div class="cs-tags">
+              <span class="cs-tag" data-i18n="cs_tag_sales">Sales AI</span>
+              <span class="cs-tag" data-i18n="cs_tag_insurance">Insurance</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cs-card">
+          <div class="cs-header">
+            <div class="cs-num" data-i18n="cs8_num">Case Study 08</div>
+            <h3 data-i18n="cs8_title">AI Inventory & Ordering for Restaurant Chain</h3>
+          </div>
+          <div class="cs-body">
+            <p data-i18n="cs8_desc">Implemented AI-driven inventory forecasting and automated supplier ordering across 4 locations. Reduced food waste by 30% and cut ordering time from 5 hours to 20 minutes.</p>
+            <div class="cs-metrics">
+              <div class="cs-metric"><span class="cs-metric-val">-30%</span><span class="cs-metric-label" data-i18n="cs8_m1">Food waste</span></div>
+              <div class="cs-metric"><span class="cs-metric-val">5X</span><span class="cs-metric-label">ROI</span></div>
+            </div>
+            <div class="cs-tags">
+              <span class="cs-tag" data-i18n="cs_tag_inventory">Inventory AI</span>
+              <span class="cs-tag" data-i18n="cs_tag_restaurant">Restaurant</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cs-card">
+          <div class="cs-header">
+            <div class="cs-num" data-i18n="cs9_num">Case Study 09</div>
+            <h3 data-i18n="cs9_title">AI Training Program for Accounting Firm</h3>
+          </div>
+          <div class="cs-body">
+            <p data-i18n="cs9_desc">Designed and delivered a custom AI training program for 20 staff members. Team now uses AI for data entry, report generation, and client communication — saving 12 hours/week per person.</p>
+            <div class="cs-metrics">
+              <div class="cs-metric"><span class="cs-metric-val">12 hrs</span><span class="cs-metric-label" data-i18n="cs9_m1">Saved / person</span></div>
+              <div class="cs-metric"><span class="cs-metric-val">20</span><span class="cs-metric-label" data-i18n="cs9_m2">Staff trained</span></div>
+            </div>
+            <div class="cs-tags">
+              <span class="cs-tag" data-i18n="cs_tag_training">AI Training</span>
+              <span class="cs-tag" data-i18n="cs_tag_accounting">Accounting</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cs-card">
+          <div class="cs-header">
+            <div class="cs-num" data-i18n="cs10_num">Case Study 10</div>
+            <h3 data-i18n="cs10_title">Full AI Transformation for Montreal Construction Company</h3>
+          </div>
+          <div class="cs-body">
+            <p data-i18n="cs10_desc">Complete AI overhaul — lead capture, automated bidding, project scheduling, and client communication. Went from zero automation to a fully AI-powered operation in 3 weeks.</p>
+            <div class="cs-metrics">
+              <div class="cs-metric"><span class="cs-metric-val">+4X</span><span class="cs-metric-label" data-i18n="cs10_m1">Leads</span></div>
+              <div class="cs-metric"><span class="cs-metric-val">8X</span><span class="cs-metric-label">ROI</span></div>
+            </div>
+            <div class="cs-tags">
+              <span class="cs-tag" data-i18n="cs_tag_full">Full AI System</span>
+              <span class="cs-tag" data-i18n="cs_tag_construction">Construction</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <!-- -- Testimonials -- -->
   <section id="testimonials" class="section bg-light" aria-label="Testimonials">
     <div class="section-inner">
@@ -869,6 +1081,19 @@
         how2_desc: 'Our team analyzes your workflows, identifies automation opportunities, and calculates your potential ROI from AI.',
         how3_title: 'Get Your AI Roadmap',
         how3_desc: 'You receive a custom AI strategy with step-by-step implementation priorities, timelines, and expected returns.',
+        // Case Studies
+        cs_tag: 'Case Studies', cs_title: '10 AI Consultations That <em>Delivered Results</em>', cs_desc: 'Real businesses. Real AI strategies. Measurable outcomes from our consultation engagements.',
+        cs1_num: 'Case Study 01', cs1_title: 'AI Lead Follow-Up for Montreal Real Estate Agency', cs1_desc: 'Audited their lead process and implemented AI-powered email, SMS, and phone follow-up responding in under 60 seconds. Eliminated 25+ hours/week of manual work.', cs1_m1: 'Leads',
+        cs2_num: 'Case Study 02', cs2_title: 'Customer Service AI for E-Commerce Brand', cs2_desc: 'Built a custom AI chatbot handling 80% of support tickets automatically. Reduced response time from 4 hours to under 30 seconds and cut support costs by 45%.', cs2_m1: 'Support costs', cs2_m2: 'Response time',
+        cs3_num: 'Case Study 03', cs3_title: 'Workflow Automation for Montreal Law Firm', cs3_desc: 'Mapped 12 manual processes and automated 8 of them with AI \u2014 client intake, document generation, follow-ups, and scheduling. Freed up 15 hours/week for billable work.', cs3_m1: 'Saved / week', cs3_m2: 'Revenue',
+        cs4_num: 'Case Study 04', cs4_title: 'AI Content Strategy for Fitness Brand', cs4_desc: 'Developed an AI-powered content pipeline \u2014 blog posts, social media, email campaigns \u2014 generating 10X more content at 70% lower cost. Organic traffic tripled in 3 months.', cs4_m1: 'Traffic', cs4_m2: 'Content cost',
+        cs5_num: 'Case Study 05', cs5_title: 'AI Appointment Booking for Dental Clinic', cs5_desc: 'Replaced manual phone scheduling with AI booking agent. Patients book 24/7 via SMS and web, get automated reminders, and no-shows dropped by 60%.', cs5_m1: 'Bookings', cs5_m2: 'No-shows',
+        cs6_num: 'Case Study 06', cs6_title: 'Data Analytics AI for IT Consulting Firm', cs6_desc: 'Built AI-powered dashboards that automatically analyze project data, predict delays, and generate weekly reports. Saved the leadership team 8 hours/week on reporting.', cs6_m1: 'Saved / week', cs6_m2: 'On-time delivery',
+        cs7_num: 'Case Study 07', cs7_title: 'AI Sales Agent for South Shore Insurance Broker', cs7_desc: 'Deployed an AI agent that qualifies inbound leads, answers policy questions, and books consultations automatically. Converted 3X more website visitors into clients.', cs7_m1: 'Conversions', cs7_m2: 'Availability',
+        cs8_num: 'Case Study 08', cs8_title: 'AI Inventory & Ordering for Restaurant Chain', cs8_desc: 'Implemented AI-driven inventory forecasting and automated supplier ordering across 4 locations. Reduced food waste by 30% and cut ordering time from 5 hours to 20 minutes.', cs8_m1: 'Food waste',
+        cs9_num: 'Case Study 09', cs9_title: 'AI Training Program for Accounting Firm', cs9_desc: 'Designed and delivered a custom AI training program for 20 staff members. Team now uses AI for data entry, report generation, and client communication.', cs9_m1: 'Saved / person', cs9_m2: 'Staff trained',
+        cs10_num: 'Case Study 10', cs10_title: 'Full AI Transformation for Montreal Construction Company', cs10_desc: 'Complete AI overhaul \u2014 lead capture, automated bidding, project scheduling, and client communication. Went from zero automation to a fully AI-powered operation in 3 weeks.', cs10_m1: 'Leads',
+        cs_tag_lead: 'Lead Automation', cs_tag_re: 'Real Estate', cs_tag_chatbot: 'AI Chatbot', cs_tag_workflow: 'Workflow', cs_tag_legal: 'Legal', cs_tag_content: 'Content AI', cs_tag_seo: 'SEO', cs_tag_booking: 'Booking AI', cs_tag_health: 'Healthcare', cs_tag_data: 'Data AI', cs_tag_it: 'IT Consulting', cs_tag_sales: 'Sales AI', cs_tag_insurance: 'Insurance', cs_tag_inventory: 'Inventory AI', cs_tag_restaurant: 'Restaurant', cs_tag_training: 'AI Training', cs_tag_accounting: 'Accounting', cs_tag_full: 'Full AI System', cs_tag_construction: 'Construction',
         // Testimonials
         test_tag: 'Testimonials',
         test_title: 'What Our Clients <em>Are Saying</em>',
@@ -1016,6 +1241,19 @@
         how2_desc: 'Notre \u00e9quipe analyse vos flux de travail, identifie les opportunit\u00e9s d\u2019automatisation et calcule votre ROI potentiel.',
         how3_title: 'Recevez Votre Feuille de Route IA',
         how3_desc: 'Vous recevez une strat\u00e9gie IA personnalis\u00e9e avec priorit\u00e9s d\u2019implantation, \u00e9ch\u00e9anciers et retours attendus.',
+        // Case Studies
+        cs_tag: '\u00c9tudes de Cas', cs_title: '10 Consultations IA Qui Ont <em>Livr\u00e9 des R\u00e9sultats</em>', cs_desc: 'De vraies entreprises. De vraies strat\u00e9gies IA. Des r\u00e9sultats mesurables de nos mandats de consultation.',
+        cs1_num: '\u00c9tude 01', cs1_title: 'Suivi IA des Leads pour Agence Immobili\u00e8re \u00e0 Montr\u00e9al', cs1_desc: 'Audit du processus de leads et mise en place d\u2019un suivi automatis\u00e9 par email, SMS et t\u00e9l\u00e9phone r\u00e9pondant en moins de 60 secondes. \u00c9limination de 25+ heures/semaine de travail manuel.', cs1_m1: 'Leads',
+        cs2_num: '\u00c9tude 02', cs2_title: 'IA Service Client pour Marque E-Commerce', cs2_desc: 'Cr\u00e9ation d\u2019un chatbot IA g\u00e9rant 80% des tickets de support automatiquement. Temps de r\u00e9ponse r\u00e9duit de 4 heures \u00e0 moins de 30 secondes et co\u00fbts de support r\u00e9duits de 45%.', cs2_m1: 'Co\u00fbts support', cs2_m2: 'Temps de r\u00e9ponse',
+        cs3_num: '\u00c9tude 03', cs3_title: 'Automatisation des Flux pour Cabinet d\u2019Avocats \u00e0 Montr\u00e9al', cs3_desc: 'Cartographie de 12 processus manuels et automatisation de 8 d\u2019entre eux \u2014 accueil client, g\u00e9n\u00e9ration de documents, suivis et planification. Lib\u00e9ration de 15 heures/semaine.', cs3_m1: '\u00c9con. / sem.', cs3_m2: 'Revenus',
+        cs4_num: '\u00c9tude 04', cs4_title: 'Strat\u00e9gie de Contenu IA pour Marque Fitness', cs4_desc: 'Pipeline de contenu IA \u2014 articles, r\u00e9seaux sociaux, campagnes email \u2014 g\u00e9n\u00e9rant 10X plus de contenu \u00e0 70% moins cher. Trafic organique tripl\u00e9 en 3 mois.', cs4_m1: 'Trafic', cs4_m2: 'Co\u00fbt contenu',
+        cs5_num: '\u00c9tude 05', cs5_title: 'R\u00e9servation IA pour Clinique Dentaire', cs5_desc: 'Remplacement de la planification t\u00e9l\u00e9phonique par un agent de r\u00e9servation IA. Patients r\u00e9servent 24/7 par SMS et web, rappels automatis\u00e9s, absences r\u00e9duites de 60%.', cs5_m1: 'R\u00e9servations', cs5_m2: 'Absences',
+        cs6_num: '\u00c9tude 06', cs6_title: 'Analytique IA pour Firme de Consultation TI', cs6_desc: 'Tableaux de bord IA analysant automatiquement les donn\u00e9es projet, pr\u00e9disant les retards et g\u00e9n\u00e9rant des rapports hebdomadaires. 8 heures/semaine \u00e9conomis\u00e9es.', cs6_m1: '\u00c9con. / sem.', cs6_m2: 'Livraison \u00e0 temps',
+        cs7_num: '\u00c9tude 07', cs7_title: 'Agent de Vente IA pour Courtier d\u2019Assurance Rive-Sud', cs7_desc: 'D\u00e9ploiement d\u2019un agent IA qualifiant les leads, r\u00e9pondant aux questions et r\u00e9servant des consultations automatiquement. 3X plus de visiteurs convertis.', cs7_m1: 'Conversions', cs7_m2: 'Disponibilit\u00e9',
+        cs8_num: '\u00c9tude 08', cs8_title: 'IA Inventaire et Commandes pour Cha\u00eene de Restaurants', cs8_desc: 'Pr\u00e9vision d\u2019inventaire IA et commandes fournisseurs automatis\u00e9es sur 4 emplacements. Gaspillage alimentaire r\u00e9duit de 30%.', cs8_m1: 'Gaspillage',
+        cs9_num: '\u00c9tude 09', cs9_title: 'Programme de Formation IA pour Cabinet Comptable', cs9_desc: 'Programme de formation IA personnalis\u00e9 pour 20 employ\u00e9s. L\u2019\u00e9quipe utilise maintenant l\u2019IA pour la saisie, les rapports et la communication client.', cs9_m1: '\u00c9con. / personne', cs9_m2: 'Form\u00e9s',
+        cs10_num: '\u00c9tude 10', cs10_title: 'Transformation IA Compl\u00e8te pour Entreprise de Construction \u00e0 Montr\u00e9al', cs10_desc: 'Refonte IA compl\u00e8te \u2014 capture de leads, soumissions automatis\u00e9es, planification de projets et communication client. De z\u00e9ro automatisation \u00e0 une op\u00e9ration enti\u00e8rement IA en 3 semaines.', cs10_m1: 'Leads',
+        cs_tag_lead: 'Automatisation Leads', cs_tag_re: 'Immobilier', cs_tag_chatbot: 'Chatbot IA', cs_tag_workflow: 'Flux de Travail', cs_tag_legal: 'Juridique', cs_tag_content: 'Contenu IA', cs_tag_seo: 'SEO', cs_tag_booking: 'R\u00e9servation IA', cs_tag_health: 'Sant\u00e9', cs_tag_data: 'Donn\u00e9es IA', cs_tag_it: 'Consultation TI', cs_tag_sales: 'Vente IA', cs_tag_insurance: 'Assurance', cs_tag_inventory: 'Inventaire IA', cs_tag_restaurant: 'Restaurant', cs_tag_training: 'Formation IA', cs_tag_accounting: 'Comptabilit\u00e9', cs_tag_full: 'Syst\u00e8me IA Complet', cs_tag_construction: 'Construction',
         // Testimonials
         test_tag: 'T\u00e9moignages',
         test_title: 'Ce Que Nos Clients <em>Disent</em>',
