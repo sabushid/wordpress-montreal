@@ -383,12 +383,11 @@
         <img src="https://realestate.rushanet.com/brand_logo.png" alt="Rushanet AI Consultation Montreal" class="nav-logo" width="140" height="40" loading="eager" decoding="async" fetchpriority="high" />
       </a>
       <nav class="nav-links" aria-label="Main navigation">
-        <a href="#problems" data-i18n="nav_problems">Challenges</a>
-        <a href="#solution" data-i18n="nav_solution">Solution</a>
-        <a href="#results" data-i18n="nav_results">Results</a>
-        <a href="#services" data-i18n="nav_services">Services</a>
-        <a href="#how" data-i18n="nav_how">How It Works</a>
-        <a href="#faq">FAQ</a>
+        <a href="index.html" data-i18n="nav_wordpress">WordPress & SEO</a>
+        <a href="ai-agents-development.html" data-i18n="nav_dev">AI Development</a>
+        <a href="ai-agents-consultation.html" data-i18n="nav_consult">AI Consultation</a>
+        <a href="ai-agents-education.html" data-i18n="nav_edu">AI Education</a>
+        <a href="https://realestate.rushanet.com" data-i18n="nav_realestate">Real Estate AI</a>
       </nav>
       <div class="nav-right">
         <button class="lang-toggle" onclick="toggleLang()" aria-label="Switch language">
@@ -411,12 +410,11 @@
     </div>
     <div id="mob" class="mobile-menu">
       <div class="mobile-inner">
-        <a href="#problems" onclick="closeMob()" data-i18n="nav_problems">Challenges</a>
-        <a href="#solution" onclick="closeMob()" data-i18n="nav_solution">Solution</a>
-        <a href="#results" onclick="closeMob()" data-i18n="nav_results">Results</a>
-        <a href="#services" onclick="closeMob()" data-i18n="nav_services">Services</a>
-        <a href="#how" onclick="closeMob()" data-i18n="nav_how">How It Works</a>
-        <a href="#faq" onclick="closeMob()">FAQ</a>
+        <a href="index.html" onclick="closeMob()" data-i18n="nav_wordpress">WordPress & SEO</a>
+        <a href="ai-agents-development.html" onclick="closeMob()" data-i18n="nav_dev">AI Development</a>
+        <a href="ai-agents-consultation.html" onclick="closeMob()" data-i18n="nav_consult">AI Consultation</a>
+        <a href="ai-agents-education.html" onclick="closeMob()" data-i18n="nav_edu">AI Education</a>
+        <a href="https://realestate.rushanet.com" onclick="closeMob()" data-i18n="nav_realestate">Real Estate AI</a>
         <a href="#consult" onclick="closeMob()" class="mob-cta" data-i18n="nav_cta">Free Consultation</a>
       </div>
     </div>
@@ -984,6 +982,42 @@
     </div>
   </section>
 
+  <!-- Related Services -->
+  <section class="section bg-light" aria-label="Related Services">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="section-tag" data-i18n="related_tag">Our Services</span>
+        <h2 class="section-title" data-i18n="related_title">Explore Our Other <em>Services</em></h2>
+      </div>
+      <div class="system-grid">
+        <div class="system-card">
+          <div class="system-icon">&#127760;</div>
+          <h3 data-i18n="related_wp">WordPress & SEO</h3>
+          <p data-i18n="related_wp_desc">Fast, SEO-optimized WordPress websites that generate 2X–5X more leads.</p>
+          <a href="index.html" style="display:inline-block;margin-top:12px;color:#5400b1;font-weight:600;font-size:14px;text-decoration:none;" data-i18n="related_more">Learn More →</a>
+        </div>
+        <div class="system-card">
+          <div class="system-icon">&#129302;</div>
+          <h3 data-i18n="related_dev">AI Agents Development</h3>
+          <p data-i18n="related_dev_desc">Custom AI agents that automate tasks and drive 3X–10X ROI.</p>
+          <a href="ai-agents-development.html" style="display:inline-block;margin-top:12px;color:#5400b1;font-weight:600;font-size:14px;text-decoration:none;" data-i18n="related_more">Learn More →</a>
+        </div>
+        <div class="system-card">
+          <div class="system-icon">&#127891;</div>
+          <h3 data-i18n="related_edu">AI Agents Education</h3>
+          <p data-i18n="related_edu_desc">Hands-on AI training that boosts team productivity by 40%.</p>
+          <a href="ai-agents-education.html" style="display:inline-block;margin-top:12px;color:#5400b1;font-weight:600;font-size:14px;text-decoration:none;" data-i18n="related_more">Learn More →</a>
+        </div>
+        <div class="system-card">
+          <div class="system-icon">&#127968;</div>
+          <h3 data-i18n="related_re">Real Estate AI Automation</h3>
+          <p data-i18n="related_re_desc">Respond to every lead in under 60 seconds via email, SMS, and phone.</p>
+          <a href="https://realestate.rushanet.com" style="display:inline-block;margin-top:12px;color:#5400b1;font-weight:600;font-size:14px;text-decoration:none;" data-i18n="related_more">Learn More →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- -- Final CTA -- -->
   <section class="final-cta">
     <div class="final-cta-inner">
@@ -1166,7 +1200,27 @@
         challenge_2: 'Want to automate lead follow-up',
         challenge_3: 'Need a custom AI agent',
         challenge_4: 'Want to reduce manual work',
-        challenge_5: 'Other'
+        challenge_5: 'Other',
+        // Cross-nav
+        nav_wordpress: 'WordPress & SEO',
+        nav_dev: 'AI Development',
+        nav_consult: 'AI Consultation',
+        nav_edu: 'AI Education',
+        nav_realestate: 'Real Estate AI',
+        // Related Services
+        related_tag: 'Our Services',
+        related_title: 'Explore Our Other <em>Services</em>',
+        related_wp: 'WordPress & SEO',
+        related_wp_desc: 'Fast, SEO-optimized WordPress websites that generate 2X–5X more leads.',
+        related_dev: 'AI Agents Development',
+        related_dev_desc: 'Custom AI agents that automate tasks and drive 3X–10X ROI.',
+        related_consult: 'AI Agents Consultation',
+        related_consult_desc: 'Expert AI strategy and roadmap to cut costs by 30%.',
+        related_edu: 'AI Agents Education',
+        related_edu_desc: 'Hands-on AI training that boosts team productivity by 40%.',
+        related_re: 'Real Estate AI Automation',
+        related_re_desc: 'Respond to every lead in under 60 seconds via email, SMS, and phone.',
+        related_more: 'Learn More →'
       },
       fr: {
         // Nav
@@ -1326,7 +1380,27 @@
         challenge_2: 'Automatiser le suivi des leads',
         challenge_3: 'Besoin d\u2019un agent IA personnalis\u00e9',
         challenge_4: 'R\u00e9duire le travail manuel',
-        challenge_5: 'Autre'
+        challenge_5: 'Autre',
+        // Cross-nav
+        nav_wordpress: 'WordPress & SEO',
+        nav_dev: 'Développement IA',
+        nav_consult: 'Consultation IA',
+        nav_edu: 'Éducation IA',
+        nav_realestate: 'Immobilier IA',
+        // Related Services
+        related_tag: 'Nos Services',
+        related_title: 'Explorez Nos Autres <em>Services</em>',
+        related_wp: 'WordPress & SEO',
+        related_wp_desc: 'Sites WordPress rapides et optimisés SEO qui génèrent 2X–5X plus de leads.',
+        related_dev: 'Développement d\'Agents IA',
+        related_dev_desc: 'Agents IA personnalisés qui automatisent les tâches et offrent un ROI de 3X–10X.',
+        related_consult: 'Consultation Agents IA',
+        related_consult_desc: 'Stratégie IA experte et feuille de route pour réduire les coûts de 30%.',
+        related_edu: 'Éducation Agents IA',
+        related_edu_desc: 'Formation IA pratique qui augmente la productivité de votre équipe de 40%.',
+        related_re: 'Automatisation IA Immobilier',
+        related_re_desc: 'Répondez à chaque lead en moins de 60 secondes par email, SMS et téléphone.',
+        related_more: 'En Savoir Plus →'
       }
     };
 
